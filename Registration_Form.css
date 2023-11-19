@@ -1,0 +1,195 @@
+* {
+    font-family: Dosis;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+body {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    background: rgb(0 0 0 / 71%);
+
+}
+
+.registration_box::before {
+    background-image: url("https://source.unsplash.com/random/?city,night");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.registration_box {
+    width: 20%;
+    height: 100%;
+    outline: none;
+    background: rgba(0, 0, 0, 0.333);
+    border: 5px solid rgba(253, 253, 253, 0.474);
+    padding: 2%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+h1 {
+    font-size: 300%;
+    /* font-family:Bree Serif; */
+    font-weight: 700;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 235%;
+}
+
+#form{
+    width: 100%;
+}
+#form div{
+    margin-top: 2%;
+    padding: 2% 2%;
+    width: 100%;
+    align-items: center;
+    max-height: 100%;
+    transition: 0.6s;
+    overflow: hidden;
+    position: relative;
+
+}
+.registration_box input {
+    background: whitesmoke;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.474);
+    width: 90%;
+    padding: 5px 9px;
+    border-radius: 15px;
+    padding-left: 13px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+}
+
+#ask{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#ask a{
+    text-decoration: none;
+    color: rgb(242, 143, 251);
+}
+#ask a:hover{
+    text-decoration: underline;
+    color: rgb(227, 0, 247);
+}
+
+#Sign_bar {
+    width: 100%;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#btn{
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.474);
+    /* width: 100%; */
+    padding: 5px 9px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: rgb(247, 0, 247);
+    transform: 1s;
+}
+button:hover{
+    background: rgb(184, 1, 184);
+
+}
+
+.registration_box input::placeholder {
+    font-size: 110%;
+    color: rgb(92, 92, 92);
+}
+
+.errors{
+    border: 1px solid rgba(255, 255, 255, 0.242);
+    background-color: rgb(235, 235, 235);
+    color: rgb(246, 59, 59);
+    font-size: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    font-weight: 400;
+    display: none;
+}
+#form div div{
+    padding-left:3%;
+    width: 80%;
+}
+.registration_box i{
+    position:absolute;
+    color: rgb(92, 92, 92);
+    right: 7%;
+    transform: translateY(50%);
+}
+
+.popup{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    width: 20%;
+    background: rgba(255, 255, 255, 0.933);
+    border: 2px solid rgba(0, 0, 0, 0.57);
+
+    position: absolute;
+    border-radius: 15px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform 0.6s ,top 0.6s ;
+    visibility: hidden;
+    text-align: center;
+    padding: 2%;
+}
+
+
+#popup i{
+    color: rgb(0, 255, 0);
+    font-size: 1.8rem;
+}
+#popup h3{
+    color: rgb(0, 0, 0);
+    
+}
+#popup p{
+    color: rgb(0 0 0 );
+    
+}
+#popup button{
+    background-color: azure;
+    color: black;
+    font-size: 1.3rem ;
+    border-radius: 10px;
+    padding: 3%;
+    letter-spacing: 3px;
+}
+
+.open-slide{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+}

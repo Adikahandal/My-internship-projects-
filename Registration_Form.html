@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Registration_Form.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Chakra+Petch:wght@600&family=Dosis:wght@200&family=Kenia&family=Lobster&family=Merriweather+Sans:ital,wght@1,300&family=Monsieur+La+Doulaise&family=Rubik+Glitch&family=Rubik+Vinyl&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Chakra+Petch:wght@600&family=Dosis:wght@200&family=Kenia&family=Lobster&family=Merriweather+Sans:ital,wght@1,300&family=Monsieur+La+Doulaise&family=Rubik+Glitch&family=Rubik+Vinyl&family=Slabo+27px&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="registration_box">
+        <h1>Register Here</h1>
+        <h2>Sign Up</h2>
+        <form id="form" action="" name="form" onsubmit="return error()">
+            <div>
+                <i class='bx bxs-user'></i>
+                <input type="user" class="input" placeholder="User Name" name="usern">
+                <div class="errors" id="user_e1">*Enter atleast 6 characters</div>
+                <div class="errors" id="user_e2">*Please enter User name</div>
+            </div>
+            <div>
+                <i class='bx bx-envelope'></i>
+                <input type="email" class="input" name="email" placeholder="Email">
+                <div class="errors" id="id_error2">*Please enter Email Id !!!</div>
+                <div class="errors" id="id_error">* Email Id not valide ,RETRY !!!</div>
+            </div>
+            <div>
+                <i class='bx bx-phone'></i>
+                <input type="text" class="input" placeholder="Mobile Number" name="mobnum">
+                <div class="errors" id="mobile_e">*It should be 10 digits!!</div>
+                <div class="errors" id="mobile_e2">*Enter Your mobile Number!!</div>
+
+            </div>
+            <div>
+                <i class='bx bx-lock-alt'></i>
+                <input type="password" class="input" placeholder="Password" name="password">
+                <div class="errors" id="pass_err1">*Enter a strong password !!
+                    <div class="errors" id="pass_err2">*Please Enter Password !!
+                    </div>
+                </div>
+            </div>
+
+            <div id="c_pass">
+                <input type="password" class="input" placeholder="Confirm Password" name="c_pass">
+                <div class="errors" id="Confirm_err">*Password doesn't match</div>
+            </div>
+            <div id="ask">
+                <p>Forgot password? <a href="#">Click Here </a>
+                </p>
+            </div>
+            <div id="Sign_bar">
+                <input type="submit" onclick="error()" id="btn" value="Submit">
+            </div>
+        </form>
+    </div>
+    <div class="popup" id="popup">
+
+        <i class='bx bx-check-circle'></i>
+        <h3>Thank You</h3>
+        <p>Registration Completed Successfully!!</p>
+        <a href="#"><button >OK</button></a>
+    </div>
+    <script src="Registration_Form.js"></script>
+
+</body>
+
+</html>
