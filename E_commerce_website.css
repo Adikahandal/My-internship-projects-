@@ -600,23 +600,7 @@ header .icons a:hover {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MEDIA QUERIES  */
 @media(max-width:1028px) {
     html {
         font-size: 80%;
